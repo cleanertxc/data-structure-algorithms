@@ -25,6 +25,7 @@ public class Solution {
     int left =Findcloser(array,target);
     int right=left+1;
     for(int i=0;i<k;i++){
+      //left need to be existing or right is out of bound
       if(right>=array.length||left>=0&&target-array[left]<=array[right]-target){
         result[i]=array[left--];
       }else{
@@ -45,12 +46,14 @@ public class Solution {
       }
     }
     
+    //if the target is bigger than the biggest element in array
     if(array[right]<=target){
       return right;
     }
     if(array[left]<=target){
       return left;
     }
+    //if the target is smaller than the smallest element in array, than left is out of bound
     return -1;
   }
 }
