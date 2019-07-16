@@ -6,6 +6,7 @@ L = 1 -> null, after reverse is 1 -> null
 L = 1 -> 2 -> null, after reverse is 2 -> 1 -> null
 L = 1 -> 2 -> 3 -> null, after reverse is 2 -> 1 -> 3 -> null
 # 3 Solution
+```java
 public class Solution {
   public ListNode reverseInPairs(ListNode head) {
     // Write your solution here
@@ -30,3 +31,4 @@ public class Solution {
     return head;
   }
 }
+```
