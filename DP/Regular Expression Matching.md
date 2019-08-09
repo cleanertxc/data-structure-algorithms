@@ -41,8 +41,8 @@ s = "aab"
 p = "c*a*b"
 Output: true
 Explanation: c can be repeated 0 times, a can be repeated 1 time. Therefore, it matches "aab".
-- 
-Example 5:
+
+- Example 5:
 
 Input:
 s = "mississippi"
